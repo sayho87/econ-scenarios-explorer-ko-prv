@@ -1,43 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 316" width="100%" role="img" aria-label="시나리오별 임금 방향">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" width="100%" role="img" aria-label="시나리오별 지식 노동자와 그 외 노동자의 임금 변화">
   <defs>
     <style>
       @font-face{font-family:"Wanted Sans";src:url("../fonts/WantedSansVariable.woff2") format("woff2-variations");font-weight:400 1000;font-display:swap}
       text{font-family:"Wanted Sans","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
     </style>
   </defs>
-<rect width="760" height="316" fill="#ffffff"/>
-  <text x="24" y="34" font-size="17" font-weight="700" fill="#1c1917" font-family="Apple SD Gothic Neo, Malgun Gothic, Noto Sans KR, sans-serif">임금은 어디가 오르고 어디가 멈추나</text>
-  <text x="24" y="58" font-size="12.5" fill="#57534e" font-family="Apple SD Gothic Neo, Malgun Gothic, Noto Sans KR, sans-serif">세 경우 모두 '평균 임금'은 오른다. 다만 지식 노동자는 사정이 다르다</text>
+  <rect width="760" height="330" fill="#ffffff"/>
 
-  <g font-family="Apple SD Gothic Neo, Malgun Gothic, Noto Sans KR, sans-serif">
-    <!-- header -->
-    <text x="215" y="96" font-size="12.5" font-weight="700" fill="#57534e" text-anchor="middle">점진적</text>
-    <text x="425" y="96" font-size="12.5" font-weight="700" fill="#57534e" text-anchor="middle">상당한 변화</text>
-    <text x="635" y="96" font-size="12.5" font-weight="700" fill="#57534e" text-anchor="middle">극단적</text>
+  <text x="30" y="36" font-size="17" font-weight="700" fill="#1c1917">임금은 어디가 오르고 어디가 멈추나</text>
+  <text x="30" y="58" font-size="12.5" fill="#57534e">AI가 없을 때와 비교한 2030년 임금 차이(%). 지식 노동만 방향이 반대다</text>
 
-    <!-- row 1: knowledge -->
-    <text x="24" y="146" font-size="13" font-weight="700" fill="#1c1917">지식 노동자</text>
-    <rect x="140" y="116" width="150" height="44" rx="10" fill="#fff7ed" stroke="#fed7aa"/>
-    <text x="215" y="143" font-size="12.5" fill="#c2410c" text-anchor="middle" font-weight="700">▲ 소폭 상승</text>
+  <!-- 범례 -->
+  <rect x="470" y="30" width="11" height="11" rx="2" fill="#6366f1"/>
+  <text x="487" y="40" font-size="11.5" fill="#4338ca" font-weight="700">지식 노동자</text>
+  <rect x="580" y="30" width="11" height="11" rx="2" fill="#10b981"/>
+  <text x="597" y="40" font-size="11.5" fill="#047857" font-weight="700">그 외 노동자</text>
 
-    <rect x="350" y="116" width="150" height="44" rx="10" fill="#fffbeb" stroke="#fde68a"/>
-    <text x="425" y="143" font-size="12.5" fill="#a16207" text-anchor="middle" font-weight="700">→ 사실상 보합</text>
+  <!-- 0 기준선 -->
+  <line x1="60" y1="210" x2="722" y2="210" stroke="#a8a29e" stroke-width="1.2"/>
+  <text x="722" y="226" font-size="10.5" fill="#a8a29e" text-anchor="end">0%</text>
 
-    <rect x="560" y="116" width="150" height="44" rx="10" fill="#fef2f2" stroke="#fecaca"/>
-    <text x="635" y="143" font-size="12.5" fill="#b91c1c" text-anchor="middle" font-weight="700">▼ 10% 이상 하락</text>
+  <!-- ===== 점진적 ===== -->
+  <rect x="140" y="206.4" width="58" height="3.6" rx="1.5" fill="#6366f1"/>
+  <text x="169" y="198" font-size="11.5" font-weight="700" fill="#4338ca" text-anchor="middle">+0.4%</text>
+  <rect x="204" y="205.6" width="58" height="4.4" rx="1.5" fill="#10b981"/>
+  <text x="233" y="197" font-size="11.5" font-weight="700" fill="#047857" text-anchor="middle">+1.1%</text>
 
-    <!-- row 2: other -->
-    <text x="24" y="226" font-size="13" font-weight="700" fill="#1c1917">그 외 노동자</text>
-    <rect x="140" y="196" width="150" height="44" rx="10" fill="#ecfdf5" stroke="#a7f3d0"/>
-    <text x="215" y="223" font-size="12.5" fill="#047857" text-anchor="middle" font-weight="700">▲ 상승</text>
+  <!-- ===== 상당한 변화 ===== -->
+  <rect x="340" y="210" width="58" height="3.6" rx="1.5" fill="#6366f1"/>
+  <text x="369" y="230" font-size="11.5" font-weight="700" fill="#4338ca" text-anchor="middle">−0.3%</text>
+  <rect x="404" y="186.4" width="58" height="23.6" rx="2" fill="#10b981"/>
+  <text x="433" y="178" font-size="11.5" font-weight="700" fill="#047857" text-anchor="middle">+5.9%</text>
 
-    <rect x="350" y="196" width="150" height="44" rx="10" fill="#ecfdf5" stroke="#a7f3d0"/>
-    <text x="425" y="223" font-size="12.5" fill="#047857" text-anchor="middle" font-weight="700">▲ 상승</text>
+  <!-- ===== 극단적 ===== -->
+  <rect x="540" y="210" width="58" height="46" rx="3" fill="#6366f1"/>
+  <text x="569" y="272" font-size="12.5" font-weight="700" fill="#4338ca" text-anchor="middle">−11.5%</text>
+  <rect x="604" y="75.6" width="58" height="134.4" rx="3" fill="#10b981"/>
+  <text x="633" y="67" font-size="13" font-weight="700" fill="#047857" text-anchor="middle">+33.6%</text>
 
-    <rect x="560" y="196" width="150" height="44" rx="10" fill="#ecfdf5" stroke="#a7f3d0"/>
-    <text x="635" y="223" font-size="12.5" fill="#047857" text-anchor="middle" font-weight="700">▲ 크게 상승</text>
+  <!-- 시나리오 -->
+  <text x="201" y="298" font-size="12.5" font-weight="700" fill="#1c1917" text-anchor="middle">점진적</text>
+  <text x="401" y="298" font-size="12.5" font-weight="700" fill="#1c1917" text-anchor="middle">상당한 변화</text>
+  <text x="601" y="298" font-size="12.5" font-weight="700" fill="#1c1917" text-anchor="middle">극단적</text>
 
-    <text x="24" y="276" font-size="12" fill="#57534e">왜? AI가 지식 노동의 생산성을 올리면, 그 덕을 보는 분야(예: 건설)의 일손 수요가 늘어 임금이 오른다.</text>
-    <text x="24" y="294" font-size="11" fill="#a8a29e">* 방향을 나타낸 도표이며, 원문 보고서의 정확한 수치는 기술 보고서를 참고.</text>
-  </g>
+  <text x="30" y="322" font-size="11" fill="#a8a29e">* 극단적 시나리오에서 지식 노동 임금은 2030년에 2026년 중반보다도 살짝 낮은 수준이 된다.</text>
 </svg>
