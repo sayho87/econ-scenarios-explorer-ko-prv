@@ -45,6 +45,9 @@
   .t-modest{background:#eef2ff;color:#4338ca}.t-sub{background:#fef3c7;color:#b45309}.t-extreme{background:#fee2e2;color:#b91c1c}
   .sc .num{font-size:22px;font-weight:700;letter-spacing:-.01em;margin:10px 0 4px}
   .sc .num span{font-size:14px;font-weight:600;color:var(--text2)}
+  .sc .effect{margin-top:16px;padding-top:13px;border-top:1px solid var(--line);font-size:13.5px;font-weight:700;color:var(--text2);display:flex;align-items:baseline;justify-content:space-between}
+  .sc .effect b{font-size:29px;font-weight:800;letter-spacing:-.02em;line-height:1}
+  .sc .eff1 b{color:#4338ca}.sc .eff2 b{color:#b45309}.sc .eff3 b{color:#b91c1c}
   .sc .sub{font-size:12.5px;color:var(--text2);line-height:1.6}
   .stat{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0 6px}
   @media(max-width:720px){.stat{grid-template-columns:repeat(2,1fr)}}
@@ -139,22 +142,20 @@
         <span class="tag t-modest">🌐 점진적 변화(lv1)</span>
         <h4>인터넷 정도의 영향</h4>
         <p style="font-size:14px">경제 전체 과업의 <b>4%</b>만 AI 영향을 받는다. 영향받은 과업의 생산성은 약 35% 오른다. 효과는 인터넷이 경제를 바꾼 정도.</p>
-        <div class="num">2030 GDP <span>$34.1T</span></div>
-        <div class="sub">한화 약 45,900조 원 · AI 효과 <b>+1.6%</b></div>
+        <div class="effect eff1">AI 효과<b>+1.6%</b></div>
       </div>
       <div class="sc">
         <span class="tag t-sub">🚀 상당한 변화(lv2)</span>
         <h4>인터넷·철도보다 큰 충격</h4>
         <p style="font-size:14px">경제 전체 과업의 <b>12%</b> = <b>지식 노동 과업의 약 20%</b>가 AI 영향을 받는다. 그중 <b>4분의 3은 자동화</b>. 성장률이 평소 2%에서 5.4%로.</p>
-        <div class="num">2030 GDP <span>$36.3T</span></div>
-        <div class="sub">한화 약 48,800조 원 · AI 효과 <b>+8.3%</b></div>
+        <div class="effect eff2">AI 효과<b>+8.3%</b></div>
       </div>
       <div class="sc">
         <span class="tag t-extreme">⚡ 극단적 변화(lv3)</span>
         <h4>역사에 없던 변환</h4>
         <p style="font-size:14px">경제 전체 과업의 <b>30%</b> = <b>지식 노동 과업의 약 절반</b>이 AI 영향을 받고, 그중 <b>90%가 자동화</b>된다. AI가 스스로를 개선하는 상황을 전제로 한다.</p>
-        <div class="num">2030 GDP <span>$44.4T</span></div>
-        <div class="sub">한화 약 59,700조 원 · AI 효과 <b>+32.4%</b> · 성장률 15.4% (1인당 소득 5년마다 2배)</div>
+        <div class="effect eff3">AI 효과<b>+32.4%</b></div>
+        <div class="sub" style="margin-top:8px">성장률 15.4% · 1인당 소득 5년마다 2배</div>
       </div>
     </div>
 
