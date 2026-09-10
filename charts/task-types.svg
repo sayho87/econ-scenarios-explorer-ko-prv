@@ -1,41 +1,80 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 342" width="100%" role="img" aria-label="어떤 과업이 AI로 어떻게 바뀌는지 보여 주는 도표">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" width="100%" role="img" aria-label="간호사의 과업이 오늘에서 2030년으로 어떻게 바뀌는지 보여 주는 도표">
   <defs>
     <style>
       @font-face{font-family:"Wanted Sans";src:url("../fonts/WantedSansVariable.woff2") format("woff2-variations");font-weight:400 1000;font-display:swap}
       text{font-family:"Wanted Sans","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
     </style>
   </defs>
-<rect width="760" height="342" fill="#ffffff"/>
-  <text x="24" y="34" font-size="17" font-weight="700" fill="#1c1917" font-family="Apple SD Gothic Neo, Malgun Gothic, Noto Sans KR, sans-serif">간호사의 하루로 보는 '과업'의 운명</text>
-  <text x="24" y="58" font-size="12.5" fill="#57534e" font-family="Apple SD Gothic Neo, Malgun Gothic, Noto Sans KR, sans-serif">AI는 직업을 통째로 없애기보다, 과업 하나하나를 서로 다르게 바꾼다</text>
+  <rect width="760" height="430" fill="#ffffff"/>
 
-  <g font-family="Apple SD Gothic Neo, Malgun Gothic, Noto Sans KR, sans-serif">
-    <rect x="20" y="82" width="170" height="170" rx="14" fill="#f5f5f4" stroke="#e7e5e4"/>
-    <text x="38" y="112" font-size="13.5" font-weight="700" fill="#57534e">① 변화 없음</text>
-    <text x="38" y="140" font-size="12" fill="#78716c">사람만 할 수 있는 일</text>
-    <text x="38" y="168" font-size="12" fill="#1c1917">환자 목욕시키기</text>
-    <text x="38" y="190" font-size="12" fill="#1c1917">환자와 대화하기</text>
+  <text x="26" y="34" font-size="17" font-weight="700" fill="#1c1917">간호사의 하루는 이렇게 바뀐다</text>
+  <text x="26" y="57" font-size="12.5" fill="#57534e">직업이 통째로 사라지는 게 아니라, 과업 하나하나가 서로 다른 방식으로 변한다</text>
 
-    <rect x="205" y="82" width="170" height="170" rx="14" fill="#ecfdf5" stroke="#a7f3d0"/>
-    <text x="223" y="112" font-size="13.5" font-weight="700" fill="#047857">② 보조 (증강)</text>
-    <text x="223" y="140" font-size="12" fill="#059669">AI가 도와 더 빠르게</text>
-    <text x="223" y="168" font-size="12" fill="#1c1917">퇴원 안내문 초안</text>
-    <text x="223" y="190" font-size="12" fill="#1c1917">원격 모니터링</text>
-    <text x="223" y="212" font-size="12" fill="#1c1917">근무표 짜기</text>
+  <!-- 시간 방향 -->
+  <text x="26" y="88" font-size="11.5" font-weight="700" fill="#78716c">지금 (AS-IS)</text>
+  <text x="734" y="88" font-size="11.5" font-weight="700" fill="#3730a3" text-anchor="end">2030년 (TO-BE)</text>
+  <line x1="120" y1="83" x2="622" y2="83" stroke="#e7e5e4" stroke-width="1.5"/>
+  <polygon points="622,79 632,83 622,87" fill="#a8a29e"/>
 
-    <rect x="390" y="82" width="170" height="170" rx="14" fill="#eff6ff" stroke="#bfdbfe"/>
-    <text x="408" y="112" font-size="13.5" font-weight="700" fill="#1d4ed8">③ 자동화</text>
-    <text x="408" y="140" font-size="12" fill="#2563eb">AI가 혼자 처리</text>
-    <text x="408" y="168" font-size="12" fill="#1c1917">활력 징후 기록</text>
-    <text x="408" y="190" font-size="12" fill="#1c1917">병동 물품 주문</text>
+  <!-- ===== 왼쪽 패널 : AS-IS ===== -->
+  <rect x="20" y="98" width="212" height="272" rx="12" fill="#fafaf9" stroke="#e7e5e4" stroke-width="1.5"/>
+  <text x="36" y="118" font-size="11" font-weight="700" fill="#78716c">오늘의 과업 묶음</text>
 
-    <rect x="575" y="82" width="170" height="170" rx="14" fill="#f5f3ff" stroke="#ddd6fe"/>
-    <text x="593" y="112" font-size="13.5" font-weight="700" fill="#6d28d9">④ 새로 생긴 일</text>
-    <text x="593" y="140" font-size="12" fill="#7c3aed">AI 때문에 새로 생김</text>
-    <text x="593" y="168" font-size="12" fill="#1c1917">AI 분류 결과 확인</text>
-    <text x="593" y="190" font-size="12" fill="#1c1917">AI 치료계획 검토</text>
+  <!-- AS-IS 과업 -->
+  <rect x="32" y="128" width="188" height="30" rx="7" fill="#f5f5f4" stroke="#e7e5e4"/>
+  <text x="44" y="148" font-size="10.5" fill="#44403c">환자 목욕시키기</text>
+  <rect x="32" y="164" width="188" height="30" rx="7" fill="#f5f5f4" stroke="#e7e5e4"/>
+  <text x="44" y="184" font-size="10.5" fill="#44403c">환자와 대화하기</text>
+  <rect x="32" y="200" width="188" height="30" rx="7" fill="#f5f5f4" stroke="#e7e5e4"/>
+  <text x="44" y="220" font-size="10.5" fill="#44403c">활력 징후 손으로 기록</text>
+  <rect x="32" y="236" width="188" height="30" rx="7" fill="#f5f5f4" stroke="#e7e5e4"/>
+  <text x="44" y="256" font-size="10.5" fill="#44403c">물품 주문 전화하기</text>
+  <rect x="32" y="272" width="188" height="30" rx="7" fill="#f5f5f4" stroke="#e7e5e4"/>
+  <text x="44" y="292" font-size="10.5" fill="#44403c">퇴원 안내문 직접 작성</text>
+  <rect x="32" y="308" width="188" height="30" rx="7" fill="#f5f5f4" stroke="#e7e5e4"/>
+  <text x="44" y="328" font-size="10.5" fill="#44403c">근무표 짜기</text>
+  <text x="36" y="358" font-size="10" fill="#a8a29e">전부 사람이 직접 하는 일</text>
 
-    <text x="24" y="286" font-size="12" fill="#57534e">→ 이렇게 과업이 바뀌면 '간호사'라는 직업의 내용도 조금씩 달라진다. 나머지 일을 더 많이 맡게 되고, 생산성은 올라간다.</text>
-    <text x="24" y="308" font-size="11" fill="#a8a29e">과업 목록 출처: 미국 노동부 O*NET 분류</text>
-  </g>
+  <!-- ===== 가운데 : 변화 방식 ===== -->
+  <rect x="248" y="126" width="248" height="42" rx="9" fill="#fafaf9" stroke="#d6d3d1" stroke-width="1.3"/>
+  <text x="262" y="145" font-size="11.5" font-weight="700" fill="#57534e">① 변화 없음</text>
+  <text x="262" y="160" font-size="9.5" fill="#78716c">사람만 할 수 있는 일은 그대로</text>
+  <polygon points="496,138 508,147 496,156" fill="#d6d3d1"/>
+
+  <rect x="248" y="180" width="248" height="42" rx="9" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.3"/>
+  <text x="262" y="199" font-size="11.5" font-weight="700" fill="#047857">② 보조 · 증강</text>
+  <text x="262" y="214" font-size="9.5" fill="#059669">AI가 도와서 더 빠르고 정확하게</text>
+  <polygon points="496,192 508,201 496,210" fill="#a7f3d0"/>
+
+  <rect x="248" y="234" width="248" height="42" rx="9" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.3"/>
+  <text x="262" y="253" font-size="11.5" font-weight="700" fill="#1d4ed8">③ 자동화</text>
+  <text x="262" y="268" font-size="9.5" fill="#2563eb">AI가 혼자 처리, 사람은 안 해도 됨</text>
+  <polygon points="496,246 508,255 496,264" fill="#bfdbfe"/>
+
+  <rect x="248" y="288" width="248" height="42" rx="9" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1.3"/>
+  <text x="262" y="307" font-size="11.5" font-weight="700" fill="#6d28d9">④ 새로 생긴 과업</text>
+  <text x="262" y="322" font-size="9.5" fill="#7c3aed">AI가 한 일을 점검하는 새 일</text>
+  <polygon points="496,300 508,309 496,318" fill="#ddd6fe"/>
+
+  <!-- ===== 오른쪽 패널 : TO-BE ===== -->
+  <rect x="528" y="98" width="212" height="272" rx="12" fill="#ffffff" stroke="#c7d2fe" stroke-width="1.5"/>
+  <text x="544" y="118" font-size="11" font-weight="700" fill="#4338ca">2030년의 과업 묶음</text>
+
+  <rect x="540" y="128" width="188" height="30" rx="7" fill="#f5f5f4" stroke="#d6d3d1"/>
+  <text x="552" y="148" font-size="10.5" fill="#57534e">환자 목욕시키기</text>
+  <rect x="540" y="164" width="188" height="30" rx="7" fill="#f5f5f4" stroke="#d6d3d1"/>
+  <text x="552" y="184" font-size="10.5" fill="#57534e">환자와 훨씬 더 많이 대화</text>
+  <rect x="540" y="200" width="188" height="30" rx="7" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="552" y="220" font-size="10.5" fill="#1d4ed8">AI가 활력 징후 자동 기록</text>
+  <rect x="540" y="236" width="188" height="30" rx="7" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="552" y="256" font-size="10.5" fill="#1d4ed8">AI가 물품 자동 주문</text>
+  <rect x="540" y="272" width="188" height="30" rx="7" fill="#ecfdf5" stroke="#a7f3d0"/>
+  <text x="552" y="292" font-size="10.5" fill="#047857">AI 원격 모니터링</text>
+  <rect x="540" y="308" width="188" height="30" rx="7" fill="#f5f3ff" stroke="#ddd6fe"/>
+  <text x="552" y="328" font-size="10.5" fill="#6d28d9">AI 분류 결과 확인</text>
+  <text x="544" y="358" font-size="10" fill="#4338ca">나머지 일을 더 많이, 생산성 ↑</text>
+
+  <!-- 요약 -->
+  <text x="26" y="398" font-size="11.5" fill="#57534e">→ 손으로 기록하고 전화하던 일은 AI가 맡고, 사람은 환자와의 시간과 <tspan font-weight="700">AI가 한 일을 점검하는 일</tspan>로 옮겨 간다.</text>
+  <text x="26" y="418" font-size="10.5" fill="#a8a29e">과업 목록 출처: 미국 노동부 O*NET 분류</text>
 </svg>
