@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI 시대의 경제 시나리오 — Anthropic Econ Scenario Explorer 한국어 해설</title>
+<title>AI 시대의 경제 시나리오 — 경제 시나리오 예측 도구 한국어 해설</title>
 <style>
   :root{
     --bg:#fafaf9;--card:#ffffff;--text:#1c1917;--text2:#57534e;--text3:#a8a29e;
@@ -59,7 +59,7 @@
 
   <div class="kicker">한국어 해설 · 요약 — 원문 복제 아님</div>
   <h1>AI가 바꿀 경제의 미래: 세 가지 시나리오</h1>
-  <p class="lede">Anthropic 경제팀이 2030년 미국 경제의 가능한 미래를 시뮬레이션한<br>「경제 시나리오 탐색기(Econ Scenario Explorer)」의 내용을 우리말로 정리한 해설입니다.</p>
+  <p class="lede">Anthropic 경제팀이 2030년 미국 경제의 가능한 미래를 시뮬레이션한<br>「경제 시나리오 예측 도구(Econ Scenario Explorer)」의 내용을 우리말로 정리한 해설입니다.</p>
 
   <div class="meta">
     <span class="chip">원문: <a href="https://www.anthropic.com/institute/econ-scenarios" target="_blank" rel="noopener noreferrer">anthropic.com/institute/econ-scenarios</a></span>
@@ -68,10 +68,23 @@
     <span class="chip">저자: Korinek · Jones · Sacher · Cotter · McCrory 외</span>
   </div>
 
+  <div class="card" style="border-left:3px solid var(--accent)">
+    <h2><span class="no">00</span>결론 미리보기</h2>
+    <p>세 시나리오를 관통하는 결론은 이렇습니다.</p>
+    <ul>
+      <li><b>경제는 모든 시나리오에서 성장한다.</b> 다만 폭이 +1.6%에서 +32.4%까지 벌어진다 (2030년 기준).</li>
+      <li><b>지식 노동이 격변의 중심이다.</b> 변화가 클수록 코더·상담원 등이 자동화·전직 압력을 받고, 지식 노동 임금은 정체하거나 하락한다.</li>
+      <li><b>평균 임금은 오르지만, 오르는 곳은 지식 노동 밖이다.</b> AI가 생산성을 높인 분야(건설 등)의 수요·임금이 함께 오른다.</li>
+      <li><b>파이는 커지는데 몫은 자본으로 쏠린다.</b> Extreme 시나리오에서 노동 몫은 60%→45.2%로 줄고, 총 노동 소득은 거의 제자리다.</li>
+      <li><b>그래서 진짜 과제는 성장이 아니라 분배다.</b> 이익을 얼마나 널리 공유하고 비용을 얼마나 고르게 나누느냐가 핵심이 된다.</li>
+    </ul>
+    <div class="callout"><b>한 줄 요약:</b> AI가 만드는 경제는 거의 확실히 더 부유해지지만, <b>그 부가 누구에게 가는지</b>는 기술이 아니라 우리의 선택에 달려 있다 — 이것이 이 예측 도구가 던지는 질문이다.</div>
+  </div>
+
   <div class="card">
     <h2><span class="no">01</span>이 문서는 무엇을 다루나</h2>
-    <p>AI가 미국 경제의 일자리·성장·실업에 어떤 영향을 줄지 아직 아무도 정확히 모릅니다. 전례 없는 성장이 올지, 광범위한 실업이 올지, 둘 다 아닐지 — Anthropic 경제팀은 이 질문에 답하기 위해 <b>AI가 일자리·성장·실업에 미치는 영향을 모델링</b>하고, 그 결과를 대화형 탐색기로 공개했습니다.</p>
-    <p>Anthropic의 <a href="https://www.anthropic.com/economic-index" target="_blank" rel="noopener noreferrer">Economic Index</a>가 "지금 AI가 어떻게 쓰이고 있는지"를 측정한다면, 이 시나리오 탐색기는 <b>미래를 내다보는 도구</b>입니다. 사용자가 AI의 능력과 확산 속도에 대한 자신의 예측을 입력하면, 그 예측이 2030년 경제를 어떻게 만드는지 보여 줍니다.</p>
+    <p>AI가 미국 경제의 일자리·성장·실업에 어떤 영향을 줄지 아직 아무도 정확히 모릅니다. 전례 없는 성장이 올지, 광범위한 실업이 올지, 둘 다 아닐지 — Anthropic 경제팀은 이 질문에 답하기 위해 <b>AI가 일자리·성장·실업에 미치는 영향을 모델링</b>하고, 그 결과를 경제 시나리오 예측 도구로 공개했습니다.</p>
+    <p>Anthropic의 <a href="https://www.anthropic.com/economic-index" target="_blank" rel="noopener noreferrer">Economic Index</a>가 "지금 AI가 어떻게 쓰이고 있는지"를 측정한다면, 이 예측 도구는 <b>미래를 내다보는 도구</b>입니다. 사용자가 AI의 능력과 확산 속도에 대한 자신의 예측을 입력하면, 그 예측이 2030년 경제를 어떻게 만드는지 보여 줍니다.</p>
   </div>
 
   <div class="card">
@@ -84,33 +97,33 @@
       <li><b>새 과업 창출</b> — 예: AI가 분류한 환자 결과가 맞는지 확인, AI가 제안한 치료 계획 검토</li>
     </ul>
     <p>간호사의 하루를 예로 들면, 진료 기록을 손으로 쓰는 과업은 줄고 AI 기반 원격 모니터링·치료 계획 검토 같은 과업이 늘면서 <b>직업 자체가 시간에 따라 변합니다</b>. 과업 목록은 미국 노동부 O*NET 분류를 기반으로 합니다.</p>
-    <p>이 과업들이 전국에서 매일 수백만 번 반복되고, 그 모든 수행 건수를 합산한 것이 곧 경제입니다 — 최근 1년 기준 <b>30조 달러(US$30T+) 규모</b>. AI가 경제를 어떻게 바꾸는가는 결국 <b>과업을 얼마나 보조·자동화하고, 새 과업을 얼마나 만들며, 얼마나 빠르게 확산되느냐</b>에 달려 있습니다.</p>
+    <p>이 과업들이 전국에서 매일 수백만 번 반복되고, 그 모든 수행 건수를 합산한 것이 곧 경제입니다 — 최근 1년 기준 <b>30조 달러(US$30T+, 약 40,000조 원) 규모</b>. AI가 경제를 어떻게 바꾸는가는 결국 <b>과업을 얼마나 보조·자동화하고, 새 과업을 얼마나 만들며, 얼마나 빠르게 확산되느냐</b>에 달려 있습니다.</p>
   </div>
 
   <div class="card">
     <h2><span class="no">03</span>세 가지 시나리오</h2>
-    <p>미래는 AI 능력의 발전 속도와 산업·노동자의 채택 속도에 따라 달라집니다. 탐색기는 영향을 뚜렷이 구분하는 세 시나리오를 제시합니다.</p>
+    <p>미래는 AI 능력의 발전 속도와 산업·노동자의 채택 속도에 따라 달라집니다. 예측 도구는 영향을 뚜렷이 구분하는 세 시나리오를 제시합니다.</p>
     <div class="grid">
       <div class="sc">
         <span class="tag t-modest">MODEST · 점진적</span>
         <h4>인터넷 수준의 영향</h4>
         <p style="font-size:13.5px">AI의 경제적 효과가 대략 인터넷과 비슷. 실질 성장은 있으나 신기술의 역사적 범위 안에서 점진적으로 도래.</p>
         <div class="num">2030 GDP <span>$34.1T</span></div>
-        <div class="sub">AI 효과 <b>+1.6%</b></div>
+        <div class="sub">한화 약 45,900조 원 · AI 효과 <b>+1.6%</b></div>
       </div>
       <div class="sc">
         <span class="tag t-sub">SUBSTANTIAL · 지식 노동 혁명</span>
         <h4>인터넷·철도보다 큰 충격</h4>
         <p style="font-size:13.5px">2030년까지 지식 노동의 절반을 AI가 수행(대부분 자율), 그래도 전체 채택은 아님. 경제는 정상의 2배 성장.</p>
         <div class="num">2030 GDP <span>$36.3T</span></div>
-        <div class="sub">AI 효과 <b>+8.3%</b></div>
+        <div class="sub">한화 약 48,800조 원 · AI 효과 <b>+8.3%</b></div>
       </div>
       <div class="sc">
         <span class="tag t-extreme">EXTREME · 급진적 변환</span>
         <h4>경제사에 없는 변환</h4>
         <p style="font-size:13.5px">지식 노동 과업 대부분을 AI가 인간보다 생산적으로, 거의 전부 자율 수행. 자기개선 AI + 빠른 채택 전제.</p>
         <div class="num">2030 GDP <span>$44.4T</span></div>
-        <div class="sub">AI 효과 <b>+32.4%</b> · 연 15% 성장 → 4.5년마다 2배</div>
+        <div class="sub">한화 약 59,700조 원 · AI 효과 <b>+32.4%</b> · 연 15% 성장 → 4.5년마다 2배</div>
       </div>
     </div>
     <p style="margin-top:14px;font-size:14.5px">극단 시나리오에서는 사회 전체가 역사상 가장 부유해지지만, <b>지식 노동 일자리를 가진 사람이 크게 줄고 실업이 전형적 경기침체 수준을 넘어섭니다</b>. 핵심 과제는 성장이 아니라 <b>이익의 광범위한 공유</b>가 됩니다.</p>
@@ -118,7 +131,7 @@
 
   <div class="card">
     <h2><span class="no">04</span>사람들은 미래를 어떻게 예측하나 — 1만 명 설문</h2>
-    <p>탐색기는 사람들이 다섯 가지 질문에 답하도록 설계되어 있습니다: ① AI가 할 수 있는 과업(능력), ② 얼마나 많이 쓰이는가(채택), ③ 얼마나 자율적으로 하는가(자율성), ④ 생산성을 얼마나 높이는가(생산성), ⑤ 일자리를 잃었을 때 새 일자리를 찾는 데 걸리는 시간(전환).</p>
+    <p>예측 도구는 사람들이 다섯 가지 질문에 답하도록 설계되어 있습니다: ① AI가 할 수 있는 과업(능력), ② 얼마나 많이 쓰이는가(채택), ③ 얼마나 자율적으로 하는가(자율성), ④ 생산성을 얼마나 높이는가(생산성), ⑤ 일자리를 잃었을 때 새 일자리를 찾는 데 걸리는 시간(전환).</p>
     <p>2026년 8월, <b>미국인 10,000명 이상</b>(일반 대중 n=10,980, 사이트 방문자 n=7,926)을 대상으로 조사했습니다.</p>
     <div class="stat">
       <div class="b"><div class="v">"Substantial"</div><div class="l">전형적 응답자가 암시하는 미래</div></div>
@@ -131,12 +144,13 @@
   <div class="card">
     <h2><span class="no">05</span>발견 1 — GDP: 모든 시나리오에서 성장, 폭은 천차만별</h2>
     <table>
-      <tr><th>시나리오</th><th>2030 GDP</th><th>AI 효과</th><th>의미</th></tr>
-      <tr><td>Modest</td><td>$34.1T</td><td>+1.6%</td><td>성장은 있으나 체감 어려움</td></tr>
-      <tr><td>Substantial</td><td>$36.3T</td><td>+8.3%</td><td>인터넷·철도보다 큰 영향</td></tr>
-      <tr><td>Extreme</td><td>$44.4T</td><td>+32.4%</td><td>경제사에 없는 수준의 확장</td></tr>
+      <tr><th>시나리오</th><th>2030 GDP</th><th>한화 환산 (약)</th><th>AI 효과</th><th>의미</th></tr>
+      <tr><td>Modest</td><td>$34.1T</td><td>약 45,900조 원</td><td>+1.6%</td><td>성장은 있으나 체감 어려움</td></tr>
+      <tr><td>Substantial</td><td>$36.3T</td><td>약 48,800조 원</td><td>+8.3%</td><td>인터넷·철도보다 큰 영향</td></tr>
+      <tr><td>Extreme</td><td>$44.4T</td><td>약 59,700조 원</td><td>+32.4%</td><td>경제사에 없는 수준의 확장</td></tr>
     </table>
     <p style="font-size:14px;color:var(--text2)">* GDP는 2025년 가격 기준. 그러나 성장 자체보다 중요한 질문이 있습니다 — <b>그 성장 중 얼마를 노동자가 임금으로 받는가</b>, 몇 명이 새 일자리를 찾아야 하는가.</p>
+    <p class="src">한화 환산은 1달러 ≈ 1,345원 기준(2026.09 원·달러 환율 근사)의 단순 환산이며, 환율 변동에 따라 달라집니다.</p>
   </div>
 
   <div class="card">
@@ -164,10 +178,10 @@
     <h2><span class="no">08</span>발견 4 — 노동 vs 자본: 파이는 커지는데 몫은?</h2>
     <p>오늘날 경제가 만드는 1달러 중 약 <b>60¢는 노동, 40¢는 자본</b>이 가져갑니다. 경제가 커지는데 AI가 과업을 자동화하면, 1달러 중 더 많은 부분이 자본으로 흐를 수 있습니다 — 자본이 더 유용해지면 수요가 늘고 가격이 오르기 때문입니다.</p>
     <table>
-      <tr><th>시나리오</th><th>2030 GDP</th><th>노동 몫</th><th>자본 몫</th></tr>
-      <tr><td>Modest</td><td>$34.1T</td><td>59.4%</td><td>40.6% (+0.6p)</td></tr>
-      <tr><td>Substantial</td><td>$36.3T</td><td>56.1%</td><td>43.9% (+3.9p)</td></tr>
-      <tr><td>Extreme</td><td>$44.4T</td><td>45.2%</td><td>54.8% (+14.8p)</td></tr>
+      <tr><th>시나리오</th><th>2030 GDP</th><th>한화 환산 (약)</th><th>노동 몫</th><th>자본 몫</th></tr>
+      <tr><td>Modest</td><td>$34.1T</td><td>약 45,900조 원</td><td>59.4%</td><td>40.6% (+0.6p)</td></tr>
+      <tr><td>Substantial</td><td>$36.3T</td><td>약 48,800조 원</td><td>56.1%</td><td>43.9% (+3.9p)</td></tr>
+      <tr><td>Extreme</td><td>$44.4T</td><td>약 59,700조 원</td><td>45.2%</td><td>54.8% (+14.8p)</td></tr>
     </table>
     <p>Extreme 시나리오에서는 빠르게 커지는 경제의 이익이 고르게 분배되지 않습니다. 대부분의 지식 노동자는 낮은 임금이나 실업을 겪고, 전체 노동 몫은 줄어듭니다 — <b>2030년까지 총 노동 소득은 거의 변하지 않습니다.</b> 이 시나리오의 핵심 과제는 성장 달성이 아니라 <b>혜택의 공평한 분배와 비용의 비대칭 분산 방지</b>입니다.</p>
   </div>
@@ -181,7 +195,7 @@
   <div class="card">
     <h2><span class="no">10</span>모델의 한계 (v1.0 안내문 요약)</h2>
     <div class="callout w">
-      <b>탐색기는 v1.0</b>이며 복잡한 현실의 의도적 단순화입니다. 정책 대응, 경기순환, 총수요·금융시장 교란, 재앙적 위험 등을 포함하지 않습니다. 리뷰어들이 지적한 열린 쟁점도 있습니다:
+      <b>예측 도구는 v1.0</b>이며 복잡한 현실의 의도적 단순화입니다. 정책 대응, 경기순환, 총수요·금융시장 교란, 재앙적 위험 등을 포함하지 않습니다. 리뷰어들이 지적한 열린 쟁점도 있습니다:
       <ul style="margin-top:8px">
         <li>개별 노동자를 추적하지 않아 일자리 대체 비용을 조악하게만 그림</li>
         <li>AI 노출 직업이 정말 줄어들지에 대한 이견</li>
@@ -189,7 +203,7 @@
         <li>데이터센터 건설이 만드는 총수요 효과 미포함</li>
         <li>AI가 기술 진보 자체를 가속할 가능성의 과소평가</li>
       </ul>
-      실제 결과는 다르게 나타날 수 있으며, 탐색기는 "서로 다른 기술 발전이 경제에 무엇을 의미하는지 생각하는 도구"로 봐야 합니다.
+      실제 결과는 다르게 나타날 수 있으며, 예측 도구는 "서로 다른 기술 발전이 경제에 무엇을 의미하는지 생각하는 도구"로 봐야 합니다.
     </div>
     <p class="src">외부 검토자: Daron Acemoglu, David Autor, David Romer, Jón Steinsson, Pascual Restrepo 등 다수. 모델·기술 보고서: Anton Korinek, Chad Jones, Szymon Sacher, Tess Cotter, Peter McCrory 공동 저술.</p>
   </div>
@@ -200,7 +214,7 @@
 
   <div class="foot">
     원문: <a href="https://www.anthropic.com/institute/econ-scenarios" target="_blank" rel="noopener noreferrer">Scenarios for our Economic Future — Anthropic</a><br>
-    © 원문 저작권은 Anthropic에 있으며, 본 문서는 비공개 학습·참고용입니다.
+    © 원문 저작권은 Anthropic에 있으며, 본 문서는 원문 구조를 따라 재구성한 한국어 해설입니다.
   </div>
 
 </div>
