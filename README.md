@@ -4,7 +4,7 @@ Anthropic [Econ Scenario Explorer](https://www.anthropic.com/institute/econ-scen
 
 ## 내용
 - 과업(task) 기반 경제 모델 설명
-- 세 가지 시나리오 (Modest / Substantial / Extreme)
+- 세 가지 시나리오: 점진적 변화(lv1) · 상당한 변화(lv2) · 극단적 변화(lv3) (원문 표기 Modest / Substantial / Extreme)
 - 1만 명 설문 결과
 - 발견 1~4 (GDP / 직업 재배치 / 임금 / 노동·자본 몫)
 - 모델 한계
