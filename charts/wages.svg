@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="100%" role="img" aria-label="시나리오별 임금 방향">
+  <rect width="760" height="300" fill="#ffffff"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#1c1917" font-family="Apple SD Gothic Neo, Malgun Gothic, Noto Sans KR, sans-serif">임금은 어디가 오르고 어디가 멈추나</text>
+  <text x="24" y="58" font-size="12.5" fill="#57534e" font-family="Apple SD Gothic Neo, Malgun Gothic, Noto Sans KR, sans-serif">세 경우 모두 '평균 임금'은 오른다. 다만 지식 노동자는 사정이 다르다</text>
+
+  <g font-family="Apple SD Gothic Neo, Malgun Gothic, Noto Sans KR, sans-serif">
+    <!-- header -->
+    <text x="215" y="96" font-size="12.5" font-weight="700" fill="#57534e" text-anchor="middle">점진적</text>
+    <text x="425" y="96" font-size="12.5" font-weight="700" fill="#57534e" text-anchor="middle">상당한 변화</text>
+    <text x="635" y="96" font-size="12.5" font-weight="700" fill="#57534e" text-anchor="middle">극단적</text>
+
+    <!-- row 1: knowledge -->
+    <text x="24" y="146" font-size="13" font-weight="700" fill="#1c1917">지식 노동자</text>
+    <rect x="140" y="116" width="150" height="44" rx="10" fill="#fff7ed" stroke="#fed7aa"/>
+    <text x="215" y="143" font-size="12.5" fill="#c2410c" text-anchor="middle" font-weight="700">▲ 소폭 상승</text>
+
+    <rect x="350" y="116" width="150" height="44" rx="10" fill="#fffbeb" stroke="#fde68a"/>
+    <text x="425" y="143" font-size="12.5" fill="#a16207" text-anchor="middle" font-weight="700">→ 사실상 보합</text>
+
+    <rect x="560" y="116" width="150" height="44" rx="10" fill="#fef2f2" stroke="#fecaca"/>
+    <text x="635" y="143" font-size="12.5" fill="#b91c1c" text-anchor="middle" font-weight="700">▼ 10% 이상 하락</text>
+
+    <!-- row 2: other -->
+    <text x="24" y="226" font-size="13" font-weight="700" fill="#1c1917">그 외 노동자</text>
+    <rect x="140" y="196" width="150" height="44" rx="10" fill="#ecfdf5" stroke="#a7f3d0"/>
+    <text x="215" y="223" font-size="12.5" fill="#047857" text-anchor="middle" font-weight="700">▲ 상승</text>
+
+    <rect x="350" y="196" width="150" height="44" rx="10" fill="#ecfdf5" stroke="#a7f3d0"/>
+    <text x="425" y="223" font-size="12.5" fill="#047857" text-anchor="middle" font-weight="700">▲ 상승</text>
+
+    <rect x="560" y="196" width="150" height="44" rx="10" fill="#ecfdf5" stroke="#a7f3d0"/>
+    <text x="635" y="223" font-size="12.5" fill="#047857" text-anchor="middle" font-weight="700">▲ 크게 상승</text>
+
+    <text x="24" y="276" font-size="12" fill="#57534e">왜? AI가 지식 노동의 생산성을 올리면, 그 덕을 보는 분야(예: 건설)의 일손 수요가 늘어 임금이 오른다.</text>
+    <text x="24" y="294" font-size="11" fill="#a8a29e">* 방향을 나타낸 도표이며, 원문 보고서의 정확한 수치는 기술 보고서를 참고.</text>
+  </g>
+</svg>
