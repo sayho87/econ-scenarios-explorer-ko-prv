@@ -1,5 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="100%" role="img" aria-label="시나리오별 노동과 자본의 몫">
-  <rect width="760" height="300" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 312" width="100%" role="img" aria-label="시나리오별 노동과 자본의 몫">
+  <defs>
+    <style>
+      @font-face{font-family:"Wanted Sans";src:url("../fonts/WantedSansVariable.woff2") format("woff2-variations");font-weight:400 1000;font-display:swap}
+      text{font-family:"Wanted Sans","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+    </style>
+  </defs>
+<rect width="760" height="312" fill="#ffffff"/>
   <text x="24" y="34" font-size="17" font-weight="700" fill="#1c1917" font-family="Apple SD Gothic Neo, Malgun Gothic, Noto Sans KR, sans-serif">만들어진 돈 1달러, 누가 가져가나</text>
   <text x="24" y="58" font-size="12.5" fill="#57534e" font-family="Apple SD Gothic Neo, Malgun Gothic, Noto Sans KR, sans-serif">노동(일한 사람)과 자본(돈·기계를 가진 쪽)의 몫. 변화가 클수록 자본 쪽으로 쏠린다</text>
 

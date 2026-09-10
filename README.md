@@ -13,3 +13,7 @@ Anthropic [Econ Scenario Explorer](https://www.anthropic.com/institute/econ-scen
 - **원문 복제·번역이 아닌 해설·요약 문서**입니다 (인터랙티브·이미지 미포함)
 - 수치·그래프의 정확한 근거는 [원문](https://www.anthropic.com/institute/econ-scenarios)과 [기술 보고서 PDF](https://www-cdn.anthropic.com/files/4zrzovbb/website/cf58f84d46a4a76bf5a5b039ac695fba6b80041c.pdf)에서 확인
 - 원문 저작권은 Anthropic 소유
+
+## 폰트
+문서와 도표는 **Wanted Sans Variable** (Wanted Lab, SIL Open Font License 1.1)을 사용합니다.
+`fonts/WantedSansVariable.woff2` · 라이선스 전문은 `fonts/OFL.txt`.

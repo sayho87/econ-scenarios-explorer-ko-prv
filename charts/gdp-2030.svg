@@ -1,26 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" width="100%" role="img" aria-label="시나리오별 2030년 미국 GDP 막대 그래프">
-  <rect width="760" height="340" fill="#ffffff"/>
-  <text x="24" y="34" font-size="17" font-weight="700" fill="#1c1917" font-family="Apple SD Gothic Neo, Malgun Gothic, Noto Sans KR, sans-serif">2030년 미국 GDP — 시나리오별</text>
-  <text x="24" y="58" font-size="12.5" fill="#57534e" font-family="Apple SD Gothic Neo, Malgun Gothic, Noto Sans KR, sans-serif">막대 높이 = 그해 미국이 만드는 돈의 총합(국내총생산). AI가 없을 때보다 얼마나 늘어나는지 함께 표시</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 410" width="100%" role="img" aria-label="시나리오별 2030년 미국 GDP 막대 그래프">
+  <defs>
+    <style>
+      @font-face{font-family:"Wanted Sans";src:url("../fonts/WantedSansVariable.woff2") format("woff2-variations");font-weight:400 1000;font-display:swap}
+      text{font-family:"Wanted Sans","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+    </style>
+  </defs>
+  <rect width="760" height="410" fill="#ffffff"/>
 
-  <g font-family="Apple SD Gothic Neo, Malgun Gothic, Noto Sans KR, sans-serif">
-    <line x1="60" y1="278" x2="735" y2="278" stroke="#d6d3d1" stroke-width="1.5"/>
+  <text x="30" y="38" font-size="17" font-weight="700" fill="#1c1917">2030년 미국 GDP — 시나리오별</text>
+  <text x="30" y="62" font-size="12.5" fill="#57534e">막대 높이 = 그해 미국이 만드는 돈의 총합. AI가 없을 때보다 얼마나 늘어나는지 함께 표시</text>
 
-    <rect x="100" y="124" width="110" height="154" rx="8" fill="#a5b4fc"/>
-    <text x="155" y="112" font-size="16" font-weight="700" fill="#4338ca" text-anchor="middle">$34.1T</text>
-    <text x="155" y="300" font-size="13" font-weight="700" fill="#1c1917" text-anchor="middle">점진적 (Modest)</text>
-    <text x="155" y="320" font-size="12" fill="#57534e" text-anchor="middle">+1.6% · 약 45,900조 원</text>
+  <g>
+    <!-- 기준선 -->
+    <line x1="70" y1="300" x2="690" y2="300" stroke="#d6d3d1" stroke-width="1.5"/>
 
-    <rect x="315" y="115" width="110" height="163" rx="8" fill="#fbbf24"/>
-    <text x="370" y="103" font-size="16" font-weight="700" fill="#b45309" text-anchor="middle">$36.3T</text>
-    <text x="370" y="300" font-size="13" font-weight="700" fill="#1c1917" text-anchor="middle">상당한 변화 (Substantial)</text>
-    <text x="370" y="320" font-size="12" fill="#57534e" text-anchor="middle">+8.3% · 약 48,800조 원</text>
+    <!-- 점진적 · $34.1T (100% 기준 76.8%) -->
+    <rect x="113" y="173" width="120" height="127" rx="9" fill="#a5b4fc"/>
+    <text x="173" y="157" font-size="17" font-weight="700" fill="#4338ca" text-anchor="middle">$34.1T</text>
+    <text x="173" y="326" font-size="14" font-weight="700" fill="#1c1917" text-anchor="middle">점진적</text>
+    <text x="173" y="348" font-size="12" fill="#78716c" text-anchor="middle">Modest</text>
+    <text x="173" y="372" font-size="12" fill="#57534e" text-anchor="middle">+1.6% · 약 45,900조 원</text>
 
-    <rect x="530" y="78" width="110" height="200" rx="8" fill="#f87171"/>
-    <text x="585" y="66" font-size="16" font-weight="700" fill="#b91c1c" text-anchor="middle">$44.4T</text>
-    <text x="585" y="300" font-size="13" font-weight="700" fill="#1c1917" text-anchor="middle">극단적 (Extreme)</text>
-    <text x="585" y="320" font-size="12" fill="#57534e" text-anchor="middle">+32.4% · 약 59,700조 원</text>
+    <!-- 상당한 변화 · $36.3T -->
+    <rect x="320" y="165" width="120" height="135" rx="9" fill="#fbbf24"/>
+    <text x="380" y="149" font-size="17" font-weight="700" fill="#b45309" text-anchor="middle">$36.3T</text>
+    <text x="380" y="326" font-size="14" font-weight="700" fill="#1c1917" text-anchor="middle">상당한 변화</text>
+    <text x="380" y="348" font-size="12" fill="#78716c" text-anchor="middle">Substantial</text>
+    <text x="380" y="372" font-size="12" fill="#57534e" text-anchor="middle">+8.3% · 약 48,800조 원</text>
 
-    <text x="24" y="330" font-size="11" fill="#a8a29e">* 2025년 가격 기준. 한화는 1달러 ≈ 1,345원으로 단순 환산한 근사값(환율에 따라 달라짐).</text>
+    <!-- 극단적 · $44.4T (100%) -->
+    <rect x="527" y="135" width="120" height="165" rx="9" fill="#f87171"/>
+    <text x="587" y="119" font-size="17" font-weight="700" fill="#b91c1c" text-anchor="middle">$44.4T</text>
+    <text x="587" y="326" font-size="14" font-weight="700" fill="#1c1917" text-anchor="middle">극단적</text>
+    <text x="587" y="348" font-size="12" fill="#78716c" text-anchor="middle">Extreme</text>
+    <text x="587" y="372" font-size="12" fill="#57534e" text-anchor="middle">+32.4% · 약 59,700조 원</text>
   </g>
+
+  <text x="30" y="398" font-size="11" fill="#a8a29e">* 2025년 가격 기준. 한화는 1달러 ≈ 1,345원으로 단순 환산한 근사값(환율에 따라 달라짐).</text>
 </svg>
