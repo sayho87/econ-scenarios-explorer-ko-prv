@@ -77,6 +77,13 @@
   .issue .ic .n{font-size:10.5px;font-weight:700;color:var(--accent);letter-spacing:.09em}
   .issue .ic h5{font-size:13.5px;line-height:1.45;margin:4px 0 6px}
   .issue .ic p{font-size:12.5px;color:var(--text2);line-height:1.65;margin:0}
+  .issue .ic p .fn{color:var(--accent);font-weight:800;font-size:14px;line-height:0;vertical-align:super;margin-left:1px}
+  .fnbox{margin:16px 0 6px;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;background:#fafafa;padding:15px 20px 17px}
+  .fnbox .fn-h{display:flex;gap:8px;align-items:baseline;font-size:13.5px;font-weight:700;margin-bottom:9px;line-height:1.4}
+  .fnbox .fn-h .mk{color:var(--accent);font-size:16px;line-height:1;flex:none}
+  .fnbox p{font-size:13px;color:var(--text2);line-height:1.78;margin:0 0 10px}
+  .fnbox p:last-child{margin-bottom:0}
+  .fnbox b{color:var(--text)}
   .foot{font-size:12.5px;color:var(--text3);text-align:center;margin-top:44px;line-height:1.9}
 </style>
 </head>
@@ -392,11 +399,16 @@
         <div class="ic">
           <div class="n">논점 5</div>
           <h5>AI가 기술 발전 자체를 더 빠르게 만들면?</h5>
-          <p>AI는 일을 대신하는 것 말고도 <b>연구와 개발을 도와</b> 새로운 아이디어가 더 빨리 나오게 합니다. 그러면 성장이 한 번 더 가속됩니다. 그런데 이 통로는 계산에 넣긴 했지만 <b>효과가 거의 없는 것으로 나왔습니다.</b></p>
-          <p><b>저자들도 이걸 "의외의 발견"이라고 적습니다.</b> 이유는 연구가 <b>머리 쓰는 일만으로 끝나지 않기 때문</b>입니다. 실험하고, 만들어 보고, 임상시험을 거치는 <b>손과 설비가 필요한 단계</b>에서 막힙니다. AI가 생각하는 시간을 줄여 줘도 그 단계는 빨라지지 않습니다. 그래서 이 통로가 노동 생산성을 올리는 폭은 세 경우 모두 <b>1%도 되지 않습니다.</b></p>
-          <p>그러면 <b>"AI가 AI를 만들어 폭발적으로 빨라지는" 상황은 이 모델에서 나오지 않습니다.</b> 저자들은 그래서 여기 나온 혁신 효과가 <b>가장 작게 잡은 값(하한선)</b>일 수 있다고 밝힙니다. 현실에서 혁신 가속이 더 크게 일어난다면, GDP도 이 문서의 숫자보다 높아질 수 있습니다.</p>
+          <p>AI는 <b>연구와 개발을 도와</b> 새 아이디어가 더 빨리 나오게 합니다. 이 통로를 계산에 넣었는데도 <b>효과가 거의 없었습니다.</b><span class="fn">*</span></p>
         </div>
       </div>
+    </div>
+
+    <div class="fnbox">
+      <div class="fn-h"><span class="mk">*</span><span>논점 5 자세히 — 왜 효과가 거의 없었나</span></div>
+      <p>AI는 일을 대신하는 것 말고도 <b>연구와 개발을 도와</b> 새로운 아이디어가 더 빨리 나오게 합니다. 그러면 성장이 한 번 더 가속됩니다. 그런데 이 통로는 계산에 넣긴 했지만 <b>효과가 거의 없는 것으로 나왔습니다.</b></p>
+      <p><b>저자들도 이걸 "의외의 발견"이라고 적습니다.</b> 이유는 연구가 <b>머리 쓰는 일만으로 끝나지 않기 때문</b>입니다. 실험하고, 만들어 보고, 임상시험을 거치는 <b>손과 설비가 필요한 단계</b>에서 막힙니다. AI가 생각하는 시간을 줄여 줘도 그 단계는 빨라지지 않습니다. 그래서 이 통로가 노동 생산성을 올리는 폭은 세 경우 모두 <b>1%도 되지 않습니다.</b></p>
+      <p>그러면 <b>"AI가 AI를 만들어 폭발적으로 빨라지는" 상황은 이 모델에서 나오지 않습니다.</b> 저자들은 그래서 여기 나온 혁신 효과가 <b>가장 작게 잡은 값(하한선)</b>일 수 있다고 밝힙니다. 현실에서 혁신 가속이 더 크게 일어난다면, GDP도 이 문서의 숫자보다 높아질 수 있습니다.</p>
     </div>
 
     <div class="sub-label">📋 그 밖에 이 모델이 아예 다루지 않은 것</div>
