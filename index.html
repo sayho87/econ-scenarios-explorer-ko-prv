@@ -39,7 +39,9 @@
   li{margin-bottom:8px}
   .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0 8px}
   @media(max-width:720px){.grid{grid-template-columns:1fr}}
-  .sc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .sc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column}
+  .sc>p{flex:1}
+  .sc .nslot{min-height:20px;margin-top:8px;font-size:12.5px;color:var(--text2);line-height:1.6}
   .sc h4{font-size:16px;margin-bottom:8px}
   .sc .tag{display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:99px;margin-bottom:10px}
   .t-modest{background:#eef2ff;color:#4338ca}.t-sub{background:#fef3c7;color:#b45309}.t-extreme{background:#fee2e2;color:#b91c1c}
@@ -90,7 +92,7 @@
 <body>
 <div class="wrap">
 
-  <div class="kicker">한국어 해설 · 요약 — 원문 복제 아님</div>
+  <div class="kicker">한국어 해설 · 요약</div>
   <h1>AI가 바꿀 경제의 미래<br>세 가지 시나리오</h1>
   <p class="lede">AI가 일자리와 경제를 어떻게 바꿀지, Anthropic 경제팀이 계산해 공개한 자료를 누구나 읽을 수 있게 정리했습니다. 숫자는 원문과 같고, 설명과 도표는 이해를 돕기 위해 새로 만들었습니다.</p>
 
@@ -151,19 +153,21 @@
         <h4>인터넷 정도의 영향</h4>
         <p style="font-size:14px">경제 전체 과업의 <b>4%</b>만 AI 영향을 받는다. 영향받은 과업의 생산성은 약 35% 오른다. 효과는 인터넷이 경제를 바꾼 정도.</p>
         <div class="effect eff1">AI 효과<b>+1.6%</b></div>
+        <div class="nslot"></div>
       </div>
       <div class="sc">
         <span class="tag t-sub">🚀 상당한 변화(lv2)</span>
         <h4>인터넷·철도보다 큰 충격</h4>
         <p style="font-size:14px">경제 전체 과업의 <b>12%</b> = <b>지식 노동 과업의 약 20%</b>가 AI 영향을 받는다. 그중 <b>4분의 3은 자동화</b>. 성장률이 평소 2%에서 5.4%로.</p>
         <div class="effect eff2">AI 효과<b>+8.3%</b></div>
+        <div class="nslot"></div>
       </div>
       <div class="sc">
         <span class="tag t-extreme">⚡ 극단적 변화(lv3)</span>
         <h4>역사에 없던 변환</h4>
         <p style="font-size:14px">경제 전체 과업의 <b>30%</b> = <b>지식 노동 과업의 약 절반</b>이 AI 영향을 받고, 그중 <b>90%가 자동화</b>된다. AI가 스스로를 개선하는 상황을 전제로 한다.</p>
         <div class="effect eff3">AI 효과<b>+32.4%</b></div>
-        <div class="sub" style="margin-top:8px">성장률 15.4% · 1인당 소득 5년마다 2배</div>
+        <div class="nslot">성장률 15.4% · 1인당 소득 5년마다 2배</div>
       </div>
     </div>
 
