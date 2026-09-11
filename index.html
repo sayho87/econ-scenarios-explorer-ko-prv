@@ -93,6 +93,7 @@
   .tw{margin:16px 0;overflow-x:auto;-webkit-overflow-scrolling:touch}
   .tw table{margin:0}
   .cw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .cw object.narrow{display:none}
   .mob-note{display:none}
 
   @media(max-width:600px){
@@ -118,7 +119,8 @@
     .fnbox p{font-size:12.5px;line-height:1.72}
     .sub-label{font-size:12.5px;margin:20px 0 3px}
     figure{border:none;border-radius:12px;padding:8px 8px 2px;margin:18px 0 10px}
-    .cw object{min-width:660px}
+    .cw object.wide{display:none}
+    .cw object.narrow{display:block}
     figcaption{font-size:12px;margin:6px 2px 9px}
     .tw{margin:15px 0}
     table{font-size:12.5px}
@@ -143,7 +145,6 @@
     .wrap{padding:22px 12px 52px}
     h1{font-size:23px}
     .card{padding:18px 13px}
-    .cw object{min-width:590px}
   }
 </style>
 </head>
@@ -161,7 +162,7 @@
     <span class="chip">만든 사람: Korinek · Jones · Sacher · Cotter · McCrory</span>
   </div>
 
-  <p class="mob-note">📱 좁은 화면에서는 <b>표와 도표를 좌우로 밀어</b>서 볼 수 있습니다.</p>
+  <p class="mob-note">📱 좁은 화면에서는 <b>표를 좌우로 밀어</b>서 볼 수 있습니다.</p>
 
   <div class="card" style="border-left:3px solid var(--accent)">
     <h2><span class="no">00</span>결론부터 보기</h2>
@@ -191,7 +192,8 @@
 
     <figure>
       <div class="cw">
-        <object type="image/svg+xml" data="charts/task-types.svg" aria-label="과업 변화 네 가지 도표"></object>
+        <object class="wide" type="image/svg+xml" data="charts/task-types.svg" aria-label="과업 변화 네 가지 도표"></object>
+        <object class="narrow" type="image/svg+xml" data="charts/task-types-m.svg" aria-label="과업 변화 네 가지 도표"></object>
       </div>
       <figcaption><b>도표 1.</b> 간호사의 과업이 <b>오늘(AS-IS)</b>에서 <b>2030년(TO-BE)</b>으로 바뀌는 모습. 손으로 하던 일은 AI로 넘어가고, 사람은 환자와의 시간과 점검 업무로 옮겨 간다.</figcaption>
     </figure>
@@ -235,7 +237,8 @@
 
     <figure>
       <div class="cw">
-        <object type="image/svg+xml" data="charts/gdp-2030.svg" aria-label="시나리오별 2030년 GDP 막대 그래프"></object>
+        <object class="wide" type="image/svg+xml" data="charts/gdp-2030.svg" aria-label="시나리오별 2030년 GDP 막대 그래프"></object>
+        <object class="narrow" type="image/svg+xml" data="charts/gdp-2030-m.svg" aria-label="시나리오별 2030년 GDP 막대 그래프"></object>
       </div>
       <figcaption><b>도표 2.</b> 세 경우의 2030년 미국 GDP. 변화가 클수록 경제 규모가 크게 늘어난다.</figcaption>
     </figure>
@@ -312,7 +315,8 @@
 
     <figure>
       <div class="cw">
-        <object type="image/svg+xml" data="charts/reallocation.svg" aria-label="시나리오별 지식 노동 고용 변화와 실업률 도표"></object>
+        <object class="wide" type="image/svg+xml" data="charts/reallocation.svg" aria-label="시나리오별 지식 노동 고용 변화와 실업률 도표"></object>
+        <object class="narrow" type="image/svg+xml" data="charts/reallocation-m.svg" aria-label="시나리오별 지식 노동 고용 변화와 실업률 도표"></object>
       </div>
       <figcaption><b>도표 3.</b> 지식 노동 고용 변화와 실업률(2030년). "상당한 변화(lv2)"만 되어도 실업률이 절반 이상 오르고, "극단적 변화(lv3)"이면 다섯 명 중 한 명이 실업이 된다.</figcaption>
     </figure>
@@ -332,7 +336,8 @@
 
     <figure>
       <div class="cw">
-        <object type="image/svg+xml" data="charts/wages.svg" aria-label="시나리오별 임금 방향 도표"></object>
+        <object class="wide" type="image/svg+xml" data="charts/wages.svg" aria-label="시나리오별 임금 방향 도표"></object>
+        <object class="narrow" type="image/svg+xml" data="charts/wages-m.svg" aria-label="시나리오별 임금 방향 도표"></object>
       </div>
       <figcaption><b>도표 4.</b> AI가 없을 때와 비교한 2030년 임금 차이. 지식 노동만 방향이 반대다.</figcaption>
     </figure>
@@ -375,7 +380,8 @@
 
     <figure>
       <div class="cw">
-        <object type="image/svg+xml" data="charts/labor-capital.svg" aria-label="시나리오별 노동과 자본의 몫 도표"></object>
+        <object class="wide" type="image/svg+xml" data="charts/labor-capital.svg" aria-label="시나리오별 노동과 자본의 몫 도표"></object>
+        <object class="narrow" type="image/svg+xml" data="charts/labor-capital-m.svg" aria-label="시나리오별 노동과 자본의 몫 도표"></object>
       </div>
       <figcaption><b>도표 5.</b> 만든 돈 1달러를 <b>일하고 받는 임금(노동)</b>과 <b>설비를 가진 쪽이 받는 몫(자본)</b>이 나눠 갖는 비율.</figcaption>
     </figure>

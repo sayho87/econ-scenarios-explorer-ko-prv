@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 380" width="100%" role="img" aria-label="시나리오별 2030년 미국 GDP 막대 그래프">
+  <defs>
+    <style>
+      @font-face{font-family:"Wanted Sans";src:url("../fonts/WantedSansVariable.woff2") format("woff2-variations");font-weight:400 1000;font-display:swap}
+      text{font-family:"Wanted Sans","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+    </style>
+  </defs>
+  <rect width="360" height="380" fill="#ffffff"/>
+
+  <text x="16" y="28" font-size="15" font-weight="700" fill="#1c1917">2030년 미국 GDP — 시나리오별</text>
+  <text x="16" y="48" font-size="10.5" fill="#57534e">막대 길이 = 그해 미국이 만드는 돈의 총합</text>
+
+  <text x="16" y="82" font-size="12.5" font-weight="700" fill="#1c1917">점진적 변화(lv1)</text>
+  <text x="344" y="82" font-size="15.5" font-weight="700" fill="#4338ca" text-anchor="end">$34.1T</text>
+  <rect x="16" y="90" width="252" height="22" rx="6" fill="#a5b4fc"/>
+  <text x="16" y="128" font-size="10.5" fill="#57534e">+1.6% · 약 45,900조 원</text>
+
+  <text x="16" y="172" font-size="12.5" font-weight="700" fill="#1c1917">상당한 변화(lv2)</text>
+  <text x="344" y="172" font-size="15.5" font-weight="700" fill="#b45309" text-anchor="end">$36.3T</text>
+  <rect x="16" y="180" width="268" height="22" rx="6" fill="#fbbf24"/>
+  <text x="16" y="218" font-size="10.5" fill="#57534e">+8.3% · 약 48,800조 원</text>
+
+  <text x="16" y="262" font-size="12.5" font-weight="700" fill="#1c1917">극단적 변화(lv3)</text>
+  <text x="344" y="262" font-size="15.5" font-weight="700" fill="#b91c1c" text-anchor="end">$44.4T</text>
+  <rect x="16" y="270" width="328" height="22" rx="6" fill="#f87171"/>
+  <text x="16" y="308" font-size="10.5" fill="#57534e">+32.4% · 약 59,700조 원</text>
+
+  <text x="16" y="352" font-size="10" fill="#a8a29e">* 2025년 가격 기준 · 한화는 1달러 ≈ 1,345원 환산</text>
+</svg>
