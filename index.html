@@ -599,7 +599,7 @@
   sync();
 
   // 화면 가운데 빈 곳을 빠르게 두 번 탭하면 최상단으로
-  var SKIP = 'a,button,input,textarea,select,summary,label,[contenteditable],[role="button"]';
+  var SKIP = 'a,button,input,textarea,select,summary,label,[contenteditable],[role="button"],.sn-nav';
   var lastT = 0, lastX = 0, lastY = 0;
   window.addEventListener('pointerup', function (e) {
     if (e.button !== 0) return;
