@@ -169,11 +169,10 @@
        background:var(--card);border:1px solid var(--line);border-radius:999px;
        box-shadow:0 8px 22px rgba(28,25,23,.13);cursor:pointer}
   .fab:hover{color:var(--accent);border-color:var(--accent)}
-  /* 화살표 대신 — 글자 위에 글자폭보다 조금 짧은 선을 긋는다 */
-  .fab-top{padding:8px 17px 11px}
-  .fab-top .lbl{position:relative;display:inline-block;padding-top:9px}
-  .fab-top .lbl i{position:absolute;left:12%;right:12%;top:0;height:2px;border-radius:2px;background:currentColor;opacity:.45}
-  @media(max-width:600px){.fabs{right:13px;bottom:15px;gap:8px}.fab{min-height:40px;padding:0 15px;font-size:13px}.fab-top{padding:7px 15px 10px}}
+  /* 목차가 없는 페이지의 '맨 위로' — 화살표 아이콘 (Feather Icons arrow-up, MIT) */
+  .fab-icon{width:42px;height:42px;min-height:42px;padding:0}
+  .fab-icon svg{display:block;width:19px;height:19px}
+  @media(max-width:600px){.fabs{right:13px;bottom:15px;gap:8px}.fab{min-height:40px;padding:0 15px;font-size:13px}.fab-icon{width:40px;height:40px;min-height:40px}}
 </style>
 </head>
 <body>
@@ -583,7 +582,13 @@
   var smooth = reduce ? 'auto' : 'smooth';
   function goTop() { window.scrollTo({ top: 0, behavior: smooth }); }
 
-  // 머리말이 없는 독립 문서다 — '목차'와 '맨 위로'를 우하단에 함께 둔다
+  // '맨 위로'는 헤더 가운데에 있다 (자리는 늘 차지하고, 보였다 안 보였다만 한다)
+  var topBtn = document.querySelector('.hd-top');
+  if (topBtn) topBtn.addEventListener('click', goTop);
+
+  // 우하단 버튼 — 목차가 있으면 '목차', 없으면 화살표 '맨 위로'
+  // 화살표는 Feather Icons 의 arrow-up (MIT, Cole Bemis)
+  var ARROW = '<svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>';
   var toc = document.querySelector('.toc');
   var fabs = document.createElement('div');
   fabs.className = 'fabs';
@@ -598,18 +603,21 @@
     b.addEventListener('click', function () { toc.scrollIntoView({ behavior: smooth, block: 'start' }); });
     fabs.appendChild(b);
   }
-  var topBtn = document.createElement('button');
-  topBtn.type = 'button';
-  topBtn.className = 'fab fab-top';
-  topBtn.innerHTML = '<span class="lbl">맨 위로<i></i></span>';
-  topBtn.setAttribute('aria-label', '페이지 맨 위로 이동');
-  topBtn.addEventListener('click', goTop);
-  fabs.appendChild(topBtn);
+  // 목차가 없거나, 헤더에 '맨 위로'를 둘 자리가 없는 문서면 우하단에도 둔다
+  if (!topBtn || !toc) {
+    var t = document.createElement('button');
+    t.type = 'button';
+    t.className = 'fab fab-icon';
+    t.innerHTML = ARROW;
+    t.setAttribute('aria-label', '페이지 맨 위로 이동');
+    t.addEventListener('click', goTop);
+    fabs.appendChild(t);
+  }
   document.body.appendChild(fabs);
 
   // 최상단에서는 숨김 · 스크롤 중에도 숨김 · 700px 이상에서 멈추면 표시
   var SHOW_AT = 700, IDLE_MS = 280, idle = null;
-  function set(v) { fabs.classList.toggle('show', v); }
+  function set(v) { if (topBtn) topBtn.classList.toggle('show', v); fabs.classList.toggle('show', v); }
   function settle() { set(window.scrollY >= SHOW_AT); }
   window.addEventListener('scroll', function () {
     set(false);
