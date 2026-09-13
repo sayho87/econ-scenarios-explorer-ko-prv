@@ -616,9 +616,13 @@
   document.body.appendChild(fabs);
 
   // 최상단에서는 숨김 · 스크롤 중에도 숨김 · 700px 이상에서 멈추면 표시
+  // 700px까지 내려갈 수 없는 짧은 글은 스크롤 길이의 절반을 기준으로 잡는다
   var SHOW_AT = 700, IDLE_MS = 280, idle = null;
   function set(v) { if (topBtn) topBtn.classList.toggle('show', v); fabs.classList.toggle('show', v); }
-  function settle() { set(window.scrollY >= SHOW_AT); }
+  function settle() {
+    var room = document.documentElement.scrollHeight - window.innerHeight;
+    set(window.scrollY >= (room < 160 ? Infinity : Math.min(SHOW_AT, Math.round(room * 0.5))));
+  }
   window.addEventListener('scroll', function () {
     set(false);
     clearTimeout(idle);
