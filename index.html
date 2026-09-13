@@ -615,16 +615,25 @@
   }
   document.body.appendChild(fabs);
 
-  // 최상단에서는 숨김 · 스크롤 중에도 숨김 · 700px 이상에서 멈추면 표시
+  // 버튼 노출 규칙
+  //  · 아래로(정방향) 스크롤하는 동안 → 감춘다 (읽는 길을 가리지 않게)
+  //  · 위로(역방향) 스크롤하는 동안 → 곧바로 보여준다
+  //  · 멈추면 → 위로 올라온 뒤였거나, 700px 넘게 내려와 있으면 보여준다
   // 700px까지 내려갈 수 없는 짧은 글은 스크롤 길이의 절반을 기준으로 잡는다
-  var SHOW_AT = 700, IDLE_MS = 280, idle = null;
+  var SHOW_AT = 700, IDLE_MS = 280, idle = null, prevScrollY = window.scrollY, goingUp = false;
   function set(v) { if (topBtn) topBtn.classList.toggle('show', v); fabs.classList.toggle('show', v); }
   function settle() {
+    var y = window.scrollY;
     var room = document.documentElement.scrollHeight - window.innerHeight;
-    set(window.scrollY >= (room < 160 ? Infinity : Math.min(SHOW_AT, Math.round(room * 0.5))));
+    var at = room < 160 ? Infinity : Math.min(SHOW_AT, Math.round(room * 0.5));
+    set(y > 4 && (goingUp || y >= at));
   }
   window.addEventListener('scroll', function () {
-    set(false);
+    var y = window.scrollY;
+    if (y < prevScrollY - 1) goingUp = true;
+    else if (y > prevScrollY + 1) goingUp = false;
+    prevScrollY = y;
+    set(y > 4 && goingUp);
     clearTimeout(idle);
     idle = setTimeout(settle, IDLE_MS);
   }, { passive: true });
