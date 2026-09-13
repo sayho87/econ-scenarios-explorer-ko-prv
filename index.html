@@ -604,8 +604,10 @@
   window.addEventListener('pointerup', function (e) {
     if (e.button !== 0) return;
     if (e.target && e.target.closest && e.target.closest(SKIP)) return;
-    if (e.clientY < 64) return;
-    if (e.clientX < window.innerWidth * 0.18 || e.clientX > window.innerWidth * 0.82) return;
+    // 헤더 줄(가운데 빈 공간)은 폭 전체에서, 본문은 화면 가운데에서만
+    var bar = document.querySelector('.sitenav');
+    var inBar = bar ? e.clientY <= bar.getBoundingClientRect().bottom : false;
+    if (!inBar && (e.clientX < window.innerWidth * 0.18 || e.clientX > window.innerWidth * 0.82)) return;
     if (String(window.getSelection ? window.getSelection() : '').length) return;
     var now = Date.now();
     if (now - lastT < 340 && Math.abs(e.clientX - lastX) < 44 && Math.abs(e.clientY - lastY) < 44) {
