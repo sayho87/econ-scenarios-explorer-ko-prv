@@ -143,6 +143,22 @@
     h1{font-size:23px}
     .card{padding:18px 13px}
   }
+
+  /* 목차 — 00 결론 다음, 01 본문 앞. 본문 카드와 구분되게 톤을 낮춘다. */
+  .toc{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 32px 24px;margin-bottom:22px}
+  .toc-h{font-size:11.5px;font-weight:700;letter-spacing:.12em;color:var(--text3);text-transform:uppercase;margin-bottom:10px}
+  .toc ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:2px 28px}
+  .toc li{margin:0}
+  .toc a{display:flex;gap:9px;align-items:baseline;text-decoration:none;color:var(--text2);font-size:14.5px;line-height:1.55;padding:6px 0;transition:color .12s}
+  .toc a:hover{color:var(--accent)}
+  .toc a .n{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;font-weight:700;color:var(--accent);flex:none}
+  h2[id]{scroll-margin-top:62px}
+  @media(max-width:600px){
+    .toc{border:none;border-radius:14px;padding:18px 15px 19px;margin-bottom:14px;background:#f4f4f3}
+    .toc ol{grid-template-columns:1fr;gap:0}
+    .toc a{font-size:14px;padding:5px 0;gap:8px}
+    h2[id]{scroll-margin-top:56px}
+  }
 </style>
 </head>
 <body>
@@ -173,15 +189,31 @@
     <div class="callout">💡 <b>한 줄 요약 —</b> AI가 만드는 경제는 더 부유해질 가능성이 크다. 하지만 <b>그 부유함이 누구에게 가는지는 기술이 아니라 우리 선택에 달려 있다.</b></div>
   </div>
 
+  <nav class="toc" aria-label="목차">
+    <div class="toc-h">목차</div>
+    <ol>
+      <li><a href="#s01"><span class="n">01</span>이 문서는 무엇을 다루나</a></li>
+      <li><a href="#s02"><span class="n">02</span>경제는 '과업(task)'으로 이루어져 있다</a></li>
+      <li><a href="#s03"><span class="n">03</span>세 가지 시나리오</a></li>
+      <li><a href="#s04"><span class="n">04</span>사람들은 미래를 어떻게 예측하나 — 설문 약 1만 9천 명</a></li>
+      <li><a href="#s05"><span class="n">05</span>발견 1 — GDP: 모두 늘지만, 폭이 완전히 다르다</a></li>
+      <li><a href="#s06"><span class="n">06</span>발견 2 — 직업을 바꿔야 하는 사람이 늘어난다</a></li>
+      <li><a href="#s07"><span class="n">07</span>발견 3 — 임금: 평균은 오르는데, 오르는 곳이 딴 데다</a></li>
+      <li><a href="#s08"><span class="n">08</span>발견 4 — 파이는 커지는데 사람 몫은 줄어든다</a></li>
+      <li><a href="#s09"><span class="n">09</span>미래는 정해져 있지 않다</a></li>
+      <li><a href="#s10"><span class="n">10</span>이 모델이 하지 못하는 것</a></li>
+    </ol>
+  </nav>
+
   <div class="card">
-    <h2><span class="no">01</span>이 문서는 무엇을 다루나</h2>
+    <h2 id="s01"><span class="no">01</span>이 문서는 무엇을 다루나</h2>
     <p>AI가 경제에 어떤 영향을 줄지는 아직 아무도 정확히 모릅니다. 세상이 엄청나게 풍요로워질 수도, 일자리가 크게 사라질 수도, 둘 다 아닐 수도 있습니다.</p>
     <p>Anthropic 경제팀은 이 질문에 답하려고 <b>미국 경제를 흉내 낸 계산 모델</b>을 만들었습니다. AI의 능력과 사용 정도를 바꿔 넣으면, 2030년 경제가 어떻게 달라지는지 보여 줍니다. 이 글은 그 결과를 정리한 것입니다.</p>
     <div class="callout">같은 곳의 <a href="https://www.anthropic.com/economic-index" target="_blank" rel="noopener noreferrer">Economic Index</a>는 "지금 AI가 실제로 어떻게 쓰이는지"를 재는 자료입니다. 이 자료는 반대로 <b>"앞으로 어떻게 될지"</b>를 내다봅니다.</div>
   </div>
 
   <div class="card">
-    <h2><span class="no">02</span>경제는 '과업(task)'으로 이루어져 있다</h2>
+    <h2 id="s02"><span class="no">02</span>경제는 '과업(task)'으로 이루어져 있다</h2>
     <p>이 모델의 핵심 아이디어는 간단합니다. <b>모든 직업을 '작은 일들의 묶음'으로 본다</b>는 것입니다. 예를 들어 간호사라는 직업은 "환자 확인하기, 활력 징후 재기, 물품 주문하기, 근무표 짜기…" 같은 수십 개의 작은 일로 이루어져 있습니다.</p>
     <p>AI는 이 작은 일(과업) 하나하나를 <b>네 가지 방식 중 하나로</b> 바꿉니다. 그래서 같은 간호사라도 <b>하는 일의 구성이 달라집니다</b> — 없어지는 일, 도움받는 일, 새로 생기는 일이 섞입니다.</p>
 
@@ -204,7 +236,7 @@
   </div>
 
   <div class="card">
-    <h2><span class="no">03</span>세 가지 시나리오</h2>
+    <h2 id="s03"><span class="no">03</span>세 가지 시나리오</h2>
     <p>미래는 AI가 얼마나 똑똑해지는지, 그리고 사람들과 회사가 그걸 얼마나 빨리 쓰는지에 따라 갈립니다. 연구팀은 서로 뚜렷하게 다른 세 가지 경우를 골랐습니다. 이 문서에서는 이들을 <b>점진적 변화(lv1)</b>, <b>상당한 변화(lv2)</b>, <b>극단적 변화(lv3)</b>로 부릅니다.</p>
     <div class="grid">
       <div class="sc">
@@ -261,7 +293,7 @@
   </div>
 
   <div class="card">
-    <h2><span class="no">04</span>사람들은 미래를 어떻게 예측하나 — 약 1만 9천 명 설문</h2>
+    <h2 id="s04"><span class="no">04</span>사람들은 미래를 어떻게 예측하나 — 약 1만 9천 명 설문</h2>
     <p>이 예측 도구는 사람들에게 다섯 가지를 물어봅니다. ① AI가 어떤 일을 할 수 있나(능력) ② 얼마나 많이 쓰이나(사용) ③ 얼마나 혼자 하나(자율성) ④ 생산성을 얼마나 올리나(생산성) ⑤ 새 직업을 찾는 데 얼마나 걸리나(전환).</p>
     <p>2026년 8월, <b>약 19,000명</b>이 이 질문에 답했습니다. 다만 성격이 다른 <b>두 집단</b>이라 나눠서 봐야 합니다.</p>
     <ul>
@@ -279,7 +311,7 @@
   </div>
 
   <div class="card">
-    <h2><span class="no">05</span>발견 1 — GDP: 모두 늘지만, 폭이 완전히 다르다</h2>
+    <h2 id="s05"><span class="no">05</span>발견 1 — GDP: 모두 늘지만, 폭이 완전히 다르다</h2>
     <div class="tw">
     <table>
       <tr><th>경우</th><th>2030년 GDP</th><th>한화로 (약)</th><th>AI 효과</th><th>느낌</th></tr>
@@ -294,7 +326,7 @@
   </div>
 
   <div class="card">
-    <h2><span class="no">06</span>발견 2 — 직업을 바꿔야 하는 사람이 늘어난다</h2>
+    <h2 id="s06"><span class="no">06</span>발견 2 — 직업을 바꿔야 하는 사람이 늘어난다</h2>
     <p>세상은 원래도 조금씩 변합니다. 누군가는 일자리를 잃고 새 일자리를 찾습니다. 평소에는 힘들어도 크게 무너지진 않습니다.</p>
     <p>그런데 변화가 큰 경우에는 <b>지식 노동자에게 자동화와 교체가 크게 집중됩니다.</b> 개인 입장에서는 아래 왼쪽 같은 일을 하던 사람이 오른쪽 같은 일로 옮겨 가야 할 수도 있습니다. 문제는 <b>직업을 완전히 바꾸는 일이 어렵다</b>는 점입니다. 새 기술을 배워야 하고, 원하지 않을 수도 있고, 새 직장을 구하는 것도 쉽지 않습니다.</p>
 
@@ -327,7 +359,7 @@
   </div>
 
   <div class="card">
-    <h2><span class="no">07</span>발견 3 — 임금: 평균은 오르는데, 오르는 곳이 딴 데다</h2>
+    <h2 id="s07"><span class="no">07</span>발견 3 — 임금: 평균은 오르는데, 오르는 곳이 딴 데다</h2>
     <p>세 경우 모두 <b>평균 임금은 오릅니다.</b> 그런데 그 상승은 <b>지식 노동 바깥</b>에 집중됩니다. 이유는 사람이 직업을 바꾸는 데 시간이 걸리기 때문입니다. 지식 노동의 수요가 줄면 그쪽 임금은 눌리고, 반대로 AI가 지식 노동의 생산성을 올리면 그 덕을 보는 분야(예: 건설)의 일손 수요가 늘어 임금이 오릅니다.</p>
 
     <figure>
@@ -359,7 +391,7 @@
   </div>
 
   <div class="card">
-    <h2><span class="no">08</span>발견 4 — 파이는 커지는데 사람 몫은 줄어든다</h2>
+    <h2 id="s08"><span class="no">08</span>발견 4 — 파이는 커지는데 사람 몫은 줄어든다</h2>
     <p>지금은 경제가 만든 1달러 중 약 <b>60센트는 일하고 받는 임금(노동)</b>, <b>40센트는 설비를 가진 쪽이 가져가는 몫(자본)</b>입니다.</p>
 
     <div class="callout">
@@ -430,7 +462,7 @@
   </div>
 
   <div class="card">
-    <h2><span class="no">09</span>미래는 정해져 있지 않다 🧭</h2>
+    <h2 id="s09"><span class="no">09</span>미래는 정해져 있지 않다 🧭</h2>
     <p>2030년 경제가 어떤 모습일지는 세 가지에 달려 있습니다. 🤖 <b>AI가 무엇을 할 수 있는지</b>, 🏢 <b>회사와 사람이 그걸 어떻게 받아들이는지</b>, ⚖️ <b>그리고 그 이익을 어떻게 나누기로 하는지</b>입니다.</p>
     <p>보고서의 결론은 세 가지로 요약됩니다.</p>
     <ul>
@@ -443,7 +475,7 @@
   </div>
 
   <div class="card">
-    <h2><span class="no">10</span>이 모델이 하지 못하는 것 (v1.0 안내문 요약)</h2>
+    <h2 id="s10"><span class="no">10</span>이 모델이 하지 못하는 것 (v1.0 안내문 요약)</h2>
     <div class="callout w">
       <b>이 계산 도구는 아직 1.0 버전</b>이고, 복잡한 현실을 일부러 아주 단순하게 만든 것입니다. 그래서 다음은 아예 넣지 않았습니다 — <b>정부의 정책 대응, 경기의 오르내림, 금융시장 충격, 재앙적인 위험.</b>
     </div>
