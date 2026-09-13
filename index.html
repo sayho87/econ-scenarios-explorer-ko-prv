@@ -577,18 +577,18 @@
 
 </div>
 <script>
-// ── 우하단 이동 버튼 + 헤더 빈 곳 한 번 탭 → 최상단 ──
+// ── 이동 버튼: 헤더 가운데 '맨 위로' · 우하단 '목차' ──
 (function () {
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var smooth = reduce ? 'auto' : 'smooth';
   function goTop() { window.scrollTo({ top: 0, behavior: smooth }); }
 
+  // 머리말이 없는 독립 문서다 — '목차'와 '맨 위로'를 우하단에 함께 둔다
   var toc = document.querySelector('.toc');
   var fabs = document.createElement('div');
   fabs.className = 'fabs';
   fabs.setAttribute('role', 'group');
   fabs.setAttribute('aria-label', '페이지 이동');
-
   if (toc) {
     var b = document.createElement('button');
     b.type = 'button';
